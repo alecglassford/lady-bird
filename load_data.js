@@ -2,15 +2,13 @@
 
 /* eslint no-console: 0 */
 
-const path = require('path');
-
 const bent = require('bent');
 const cheerio = require('cheerio');
 const fs = require('fs-extra');
 
 const BASE_URL = 'https://www.rottentomatoes.com/m/lady_bird/reviews/?page=';
 const NUM_PAGES = 9;
-const DATA_PATH = path.join('data', 'reviews.json');
+const DATA_PATH = 'reviews.json';
 
 const get = bent('string', BASE_URL);
 const result = [];

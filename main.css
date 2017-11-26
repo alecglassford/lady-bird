@@ -1,0 +1,10 @@
+#container {
+  width: 800px;
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
