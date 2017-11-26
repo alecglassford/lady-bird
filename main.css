@@ -8,3 +8,8 @@
 h1 {
   font-family: Futura, Helvetica, Arial, sans-serif;
 }
+
+#viz-container {
+  width: 100%;
+  overflow-x: scroll;
+}

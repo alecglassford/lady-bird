@@ -17,14 +17,12 @@ const haveFun = function haveFunFunc(data) {
     reviews[i].count = count;
     count += 1;
   }
-  console.log(reviews);
 
   const reviewsByDate = d3.nest()
     .key(d => d.date)
     .rollup(rs => rs.length)
     .entries(reviews);
   const maxInOneDay = d3.max(reviewsByDate, d => d.value);
-  console.log(maxInOneDay);
 
   const margin = 20;
   const width = 760;

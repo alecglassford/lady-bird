@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "commitmsg": "commit-msg-must-use-emoji",
     "start": "rollup -cw & serve",
-    "build": "rollup -c"
+    "build": "rollup -c && uglifyjs -b beautify=false bundle.js -c negate_iife=false -m -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,8 @@
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
     "rollup": "^0.52.0",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "uglify-es": "^3.2.0"
   },
   "dependencies": {
     "bent": "^1.1.0",
