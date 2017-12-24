@@ -7,7 +7,7 @@ const cheerio = require('cheerio');
 const fs = require('fs-extra');
 
 const BASE_URL = 'https://www.rottentomatoes.com/m/lady_bird/reviews/?page=';
-const NUM_PAGES = 9;
+const NUM_PAGES = 11;
 const DATA_PATH = 'reviews.json';
 
 const get = bent('string', BASE_URL);
